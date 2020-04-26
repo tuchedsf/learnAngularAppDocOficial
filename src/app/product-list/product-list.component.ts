@@ -14,10 +14,10 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {}
 
   share(product: Product): void {
-    console.log('shared click' + JSON.stringify(product));
+    window.alert('shared click' + JSON.stringify(product));
   }
 
   onNotify(): void {
-    alert('click on notify event');
+    window.alert('click on notify event');
   }
 }
